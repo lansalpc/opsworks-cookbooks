@@ -186,7 +186,7 @@ include_recipe 'apache2::mod_expires'
 include_recipe 'apache2::logrotate'
 
 # uncomment to get working example site on centos/redhat/fedora/amazon
-#apache_site 'default'
+apache_site 'default'
 
 execute 'logdir_existence_and_restart_apache2' do
   action :run
